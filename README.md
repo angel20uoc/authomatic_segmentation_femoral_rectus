@@ -60,7 +60,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 1. **Construcción y preprocesado del dataset**
 
-nbsp;  - Normalización / estandarización de tamaño
+&nbsp;  - Normalización / estandarización de tamaño
 
 &nbsp;  - Limpieza de anotaciones superpuestas (si aplica)
 
@@ -118,20 +118,21 @@ nbsp;  - Normalización / estandarización de tamaño
 
 Crea una carpeta `data/` (ignoradas por git) con una estructura similar:
 
-data/<br>
-	processed/<br>
-		<CENTRO_1>.jpeg<br>
-		<CENTRO_2>.jpeg<br>
-	masks_manual/<br>
-		<CENTRO_1>.png<br>
-		<CENTRO_2>.png<br>
-	pred_masks/<br>
-		UNet/<br>
-			<CENTRO_1>.png<br>
-		AttentionUNet/<br>
-			<CENTRO_1>.png<br>
-		UNetPlusPlus/<br>
-			<CENTRO_1>.png<br>
+data/
+├─ processed/
+│  ├─ <CENTRO_1>.jpeg
+│  └─ <CENTRO_2>.jpeg
+├─ masks_manual/
+│  ├─ <CENTRO_1>.png
+│  └─ <CENTRO_2>.png
+└─ pred_masks/
+   ├─ UNet/
+   │  └─ <CENTRO_1>.png
+   ├─ AttentionUNet/
+   │  └─ <CENTRO_1>.png
+   └─ UNetPlusPlus/
+      └─ <CENTRO_1>.png
+
 
 > Ajusta rutas según tu entorno. En los notebooks hay celdas para configurar paths base.
 
@@ -175,6 +176,7 @@ conda activate rf-us-seg
 La partición entrenamiento/validación/test se realizó a nivel de imagen debido a la
 anonimización de los datos. En futuros trabajos se recomienda partición agrupada por
 sujeto y validación cruzada estratificada por centro.
+
 
 
 
