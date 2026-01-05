@@ -8,7 +8,7 @@ Este repositorio contiene el trabajo realizado en el TFM orientado a la \*\*segm
 
 Se han evaluado tres arquitecturas de segmentación biomédica:
 
-\- \*\*U-Net\*\* (baseline)
+\- **U-Net** (baseline)
 
 \- \*\*Attention U-Net\*\*
 
@@ -175,6 +175,7 @@ conda activate rf-us-seg
 La partición entrenamiento/validación/test se realizó a nivel de imagen debido a la
 anonimización de los datos. En futuros trabajos se recomienda partición agrupada por
 sujeto y validación cruzada estratificada por centro.
+
 
 
 
