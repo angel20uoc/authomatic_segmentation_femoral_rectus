@@ -119,19 +119,19 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 Crea una carpeta `data/` (ignoradas por git) con una estructura similar:
 
 data/<br>
-	>processed/<br>
-		>><CENTRO_1>/*.jpeg<br>
-		>><CENTRO_2>/.jpeg<br>
-	>masks_manual/<br>
-		>><CENTRO_1>/.png<br>
-		>><CENTRO_2>/.png<br>
-	>pred_masks/<br>
-		>>UNet/<br>
-			>>><CENTRO_1>/.png<br>
-		>>AttentionUNet/<br>
-			>>><CENTRO_1>/.png<br>
-		>>UNetPlusPlus/<br>
-			>>><CENTRO_1>/.png<br>
+	\rprocessed/<br>
+		\r\r<CENTRO_1>/*.jpeg<br>
+		\r\r<CENTRO_2>/.jpeg<br>
+	\rmasks_manual/<br>
+		\r\r<CENTRO_1>/.png<br>
+		\r\r<CENTRO_2>/.png<br>
+	\rpred_masks/<br>
+		\r\rUNet/<br>
+			\r\r\r<CENTRO_1>/.png<br>
+		\r\rAttentionUNet/<br>
+			\r\r\r<CENTRO_1>/.png<br>
+		\r\rUNetPlusPlus/<br>
+			\r\r\r<CENTRO_1>/.png<br>
 
 > Ajusta rutas según tu entorno. En los notebooks hay celdas para configurar paths base.
 
@@ -175,6 +175,7 @@ conda activate rf-us-seg
 La partición entrenamiento/validación/test se realizó a nivel de imagen debido a la
 anonimización de los datos. En futuros trabajos se recomienda partición agrupada por
 sujeto y validación cruzada estratificada por centro.
+
 
 
 
