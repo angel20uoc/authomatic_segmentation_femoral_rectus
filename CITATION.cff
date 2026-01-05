@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "Segmentación ecográfica del recto femoral con Deep Learning"
+message: "Si utilizas este repositorio, por favor cita el trabajo."
+type: software
+authors:
+  - family-names: "Sáez Larrosa"
+    given-names: "Ángel Jesús"
+keywords:
+  - ultrasound
+  - segmentation
+  - unet
+  - sarcopenia
+  - deep-learning
+license: MIT

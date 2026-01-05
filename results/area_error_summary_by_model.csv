@@ -1,0 +1,4 @@
+model,MAE_cm2,STD_cm2,MedAE_cm2,Mean_rel_error_pct
+Attention U-Net,0.195,0.546,0.017,4.101
+U-Net,0.325,0.544,0.156,7.116
+U-Net++,0.216,0.51,0.051,4.556
