@@ -2,25 +2,25 @@
 
 
 
-Este repositorio contiene el trabajo realizado en el TFM orientado a la \*\*segmentación automática del músculo recto femoral\*\* en imágenes de ecografía de adultos mayores mediante \*\*redes neuronales profundas\*\*. El objetivo es generar \*\*máscaras de segmentación\*\* y derivar \*\*parámetros morfométricos\*\* (p. ej., área transversal y grosor/profundidad) para apoyar el análisis de sarcopenia.
+Este repositorio contiene el trabajo realizado en el TFM orientado a la **segmentación automática del músculo recto femoral** en imágenes de ecografía de adultos mayores mediante **redes neuronales profundas**. El objetivo es generar **máscaras de segmentación** y derivar **parámetros morfométricos** (p. ej., área transversal y grosor/profundidad) para apoyar el análisis de sarcopenia.
 
 
 
 Se han evaluado tres arquitecturas de segmentación biomédica:
 
-\- **U-Net** (baseline)
+- **U-Net** (baseline)
 
-\- \*\*Attention U-Net\*\*
+- **Attention U-Net**
 
-\- \*\*U-Net++\*\*
-
-
-
-El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes con máscara manual\*\*, y posteriormente los modelos se aplicaron a la cohorte completa de \*\*4.500 imágenes\*\* para inferencia y extracción morfométrica.
+- **U-Net++**
 
 
 
-> \*\*Nota importante (datos y privacidad):\*\* las imágenes ecográficas provienen de un entorno clínico y \*\*no se incluyen\*\* en este repositorio. Se proporcionan scripts/notebooks y estructura de carpetas para reproducir el pipeline con datos locales.
+El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con máscara manual**, y posteriormente los modelos se aplicaron a la cohorte completa de **4.500 imágenes** para inferencia y extracción morfométrica.
+
+
+
+> **Nota importante (datos y privacidad):** las imágenes ecográficas provienen de un entorno clínico y **no se incluyen** en este repositorio. Se proporcionan scripts/notebooks y estructura de carpetas para reproducir el pipeline con datos locales.
 
 
 
@@ -32,19 +32,19 @@ El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes c
 
 
 
-\- `notebooks/`
+- `notebooks/`
 
 &nbsp; - Notebooks de preprocesado, entrenamiento, inferencia y análisis comparativo.
 
-\- `html/`
+- `html/`
 
 &nbsp; - Notebooks guardados en formato HTML con la ejecución y los resultados obtenidos.
 
-\- `results/`
+- `results/`
 
 &nbsp;- Tablas y métricas exportadas (CSV/JSON), sin información identificable.
 
-\- `requirements.txt`
+- `requirements.txt`
 
 &nbsp; - Dependencias para reproducibilidad.
 
@@ -58,7 +58,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes c
 
 
 
-1\. \*\*Construcción y preprocesado del dataset\*\*
+1. **Construcción y preprocesado del dataset**
 
 &nbsp;  - Normalización / estandarización de tamaño
 
@@ -68,7 +68,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes c
 
 
 
-2\. \*\*Entrenamiento\*\*
+2. **Entrenamiento**
 
 &nbsp;  - Modelos: U-Net, Attention U-Net, U-Net++
 
@@ -82,9 +82,9 @@ El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes c
 
 
 
-3\. \*\*Evaluación\*\*
+3. **Evaluación**
 
-&nbsp;  - Métricas principales: \*\*Dice\*\* e \*\*IoU\*\*
+&nbsp;  - Métricas principales: **Dice** e **IoU**
 
 &nbsp;  - Evaluación global y por centro
 
@@ -92,7 +92,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes c
 
 
 
-4\. \*\*Inferencia sobre la cohorte completa (4.500 imágenes)\*\*
+4. **Inferencia sobre la cohorte completa (4.500 imágenes)**
 
 &nbsp;  - Generación automática de máscaras
 
@@ -104,7 +104,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes c
 
 
 
-> \*\*Disclaimer de calidad (inferencia masiva):\*\* las medidas en la cohorte de 4.500 imágenes se obtuvieron de forma \*\*automática\*\* sin revisión manual caso a caso. Se han observado casos puntuales con valores atípicos (p. ej., mínimos 0), atribuibles a fallos de segmentación o baja calidad de imagen. Se recomienda limpieza/QA adicional para usos clínicos.
+> **Disclaimer de calidad (inferencia masiva):** las medidas en la cohorte de 4.500 imágenes se obtuvieron de forma **automática** sin revisión manual caso a caso. Se han observado casos puntuales con valores atípicos (p. ej., mínimos 0), atribuibles a fallos de segmentación o baja calidad de imagen. Se recomienda limpieza/QA adicional para usos clínicos.
 
 
 
@@ -149,8 +149,8 @@ con Python 3.9 o superior.
 ``bash
 python -m venv .venv
 
-# Windows: .venv\Scripts\activate
-# Linux/Mac: source .venv/bin/activate
+#### Windows: .venvScriptsactivate
+#### Linux/Mac: source .venv/bin/activate
 pip install -r requirements.txt
 
 
@@ -161,7 +161,7 @@ conda activate rf-us-seg
 
 
 
-\## Ejecución (orden recomendado)
+## Ejecución (orden recomendado)
 
 1. Preprocesado del dataset
 2. Entrenamiento de los modelos (U-Net, Attention U-Net, U-Net++)
@@ -175,6 +175,7 @@ conda activate rf-us-seg
 La partición entrenamiento/validación/test se realizó a nivel de imagen debido a la
 anonimización de los datos. En futuros trabajos se recomienda partición agrupada por
 sujeto y validación cruzada estratificada por centro.
+
 
 
 
