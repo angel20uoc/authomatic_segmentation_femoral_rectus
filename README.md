@@ -150,8 +150,11 @@ con Python 3.9 o superior.
 ``bash
 python -m venv .venv
 
-#### Windows: .venvScriptsactivate
-#### Linux/Mac: source .venv/bin/activate
+#### - Windows:<br> 
+.venvScriptsactivate
+
+#### - Linux/Mac:<br> 
+source .venv/bin/activate
 pip install -r requirements.txt
 
 
@@ -176,6 +179,7 @@ conda activate rf-us-seg
 La partición entrenamiento/validación/test se realizó a nivel de imagen debido a la
 anonimización de los datos. En futuros trabajos se recomienda partición agrupada por
 sujeto y validación cruzada estratificada por centro.
+
 
 
 
