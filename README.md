@@ -64,7 +64,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 &nbsp;  - Limpieza de anotaciones superpuestas (si aplica)
 
-&nbsp;  - Preparación de pares imagen–máscara para entrenamiento supervisado<br>
+&nbsp;  - Preparación de pares imagen–máscara para entrenamiento supervisado\n\n
 
 
 
@@ -78,7 +78,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 &nbsp;  - Batch size: 8
 
-&nbsp;  - Early stopping sobre validación<br>
+&nbsp;  - Early stopping sobre validación\n\n
 
 
 
@@ -88,7 +88,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 &nbsp;  - Evaluación global y por centro
 
-&nbsp;  - Comparación estadística (Wilcoxon pareado) entre arquitecturas<br>
+&nbsp;  - Comparación estadística (Wilcoxon pareado) entre arquitecturas\n\n
 
 
 
@@ -100,7 +100,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 &nbsp;    - Área transversal (cm²)
 
-&nbsp;    - Grosor / profundidad (cm)<br>
+&nbsp;    - Grosor / profundidad (cm)\n\n
 
 
 
@@ -119,19 +119,19 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 Crea una carpeta `data/` (ignoradas por git) con una estructura similar:
 
 data/<br>
-	processed/<br>
-		<CENTRO_1>/*.jpeg<br>
-		<CENTRO_2>/.jpeg<br>
-	masks_manual/<br>
-		<CENTRO_1>/.png<br>
-		<CENTRO_2>/.png<br>
-	pred_masks/<br>
-		UNet/<br>
-			<CENTRO_1>/.png<br>
-		AttentionUNet/<br>
-			<CENTRO_1>/.png<br>
-		UNetPlusPlus/<br>
-			<CENTRO_1>/.png<br>
+	>processed/<br>
+		>><CENTRO_1>/*.jpeg<br>
+		>><CENTRO_2>/.jpeg<br>
+	>masks_manual/<br>
+		>><CENTRO_1>/.png<br>
+		>><CENTRO_2>/.png<br>
+	>pred_masks/<br>
+		>>UNet/<br>
+			>>><CENTRO_1>/.png<br>
+		>>AttentionUNet/<br>
+			>>><CENTRO_1>/.png<br>
+		>>UNetPlusPlus/<br>
+			>>><CENTRO_1>/.png<br>
 
 > Ajusta rutas según tu entorno. En los notebooks hay celdas para configurar paths base.
 
@@ -175,6 +175,7 @@ conda activate rf-us-seg
 La partición entrenamiento/validación/test se realizó a nivel de imagen debido a la
 anonimización de los datos. En futuros trabajos se recomienda partición agrupada por
 sujeto y validación cruzada estratificada por centro.
+
 
 
 
