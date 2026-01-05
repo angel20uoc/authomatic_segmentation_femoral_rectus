@@ -64,7 +64,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 &nbsp;  - Limpieza de anotaciones superpuestas (si aplica)
 
-&nbsp;  - Preparación de pares imagen–máscara para entrenamiento supervisado
+&nbsp;  - Preparación de pares imagen–máscara para entrenamiento supervisado  
 
 
 
@@ -78,7 +78,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 &nbsp;  - Batch size: 8
 
-&nbsp;  - Early stopping sobre validación
+&nbsp;  - Early stopping sobre validación  
 
 
 
@@ -88,7 +88,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 &nbsp;  - Evaluación global y por centro
 
-&nbsp;  - Comparación estadística (Wilcoxon pareado) entre arquitecturas
+&nbsp;  - Comparación estadística (Wilcoxon pareado) entre arquitecturas  
 
 
 
@@ -100,7 +100,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 &nbsp;    - Área transversal (cm²)
 
-&nbsp;    - Grosor / profundidad (cm)
+&nbsp;    - Grosor / profundidad (cm)  
 
 
 
@@ -175,6 +175,7 @@ conda activate rf-us-seg
 La partición entrenamiento/validación/test se realizó a nivel de imagen debido a la
 anonimización de los datos. En futuros trabajos se recomienda partición agrupada por
 sujeto y validación cruzada estratificada por centro.
+
 
 
 
