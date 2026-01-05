@@ -1,4 +1,4 @@
-\# Segmentación ecográfica del recto femoral con Deep Learning (U-Net, Attention U-Net y U-Net++)
+# Segmentación ecográfica del recto femoral con Deep Learning (U-Net, Attention U-Net y U-Net++)
 
 
 
@@ -28,7 +28,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes c
 
 
 
-\## Contenido del repositorio
+## Contenido del repositorio
 
 
 
@@ -54,7 +54,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes c
 
 
 
-\## Pipeline (visión general)
+## Pipeline (visión general)
 
 
 
@@ -112,7 +112,7 @@ El entrenamiento se realizó sobre un subconjunto anotado de \*\*450 imágenes c
 
 
 
-\## Estructura esperada de datos (local)
+## Estructura esperada de datos (local)
 
 
 
@@ -146,7 +146,7 @@ con Python 3.9 o superior.
 
 ### Opción A: instalación con pip
 
-```bash
+``bash
 python -m venv .venv
 
 # Windows: .venv\Scripts\activate
@@ -175,6 +175,7 @@ conda activate rf-us-seg
 La partición entrenamiento/validación/test se realizó a nivel de imagen debido a la
 anonimización de los datos. En futuros trabajos se recomienda partición agrupada por
 sujeto y validación cruzada estratificada por centro.
+
 
 
 
