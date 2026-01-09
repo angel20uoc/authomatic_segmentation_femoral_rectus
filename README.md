@@ -35,6 +35,9 @@ El entrenamiento se realizó sobre un subconjunto anotado de **450 imágenes con
 
 &nbsp; - Notebooks guardados en formato HTML con la ejecución y los resultados obtenidos.
 
+- `masks/`
+
+&nbsp; - Máscaras generadas por los modelos U-Net, Attention U-Net y U-Net++.
 
 - `notebooks/`
 
@@ -179,6 +182,7 @@ conda activate rf-us-seg
 La partición entrenamiento/validación/test se realizó a nivel de imagen debido a la
 anonimización de los datos. En futuros trabajos se recomienda partición agrupada por
 sujeto y validación cruzada estratificada por centro.
+
 
 
 
